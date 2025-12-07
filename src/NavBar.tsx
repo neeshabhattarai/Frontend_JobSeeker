@@ -44,8 +44,8 @@ export default function NavBar() {
           <a href="#jobs" className="cursor-pointer">
             Jobs
           </a>
-          <div>Companies</div>
-          <div>About Us</div>
+          <a href="#companies">Companies</a>
+          <a href="#about">About Us</a>
 
           <div className="border-t pt-3 flex items-center space-x-2">
             <div className="bg-blue-700 rounded-full w-7 h-7 text-white flex justify-center pt-0.5">
