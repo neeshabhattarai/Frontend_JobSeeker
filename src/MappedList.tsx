@@ -18,7 +18,10 @@ export default function MappedList({
     <div className="flex flex-col space-y-3 p-4 rounded-md shadow-lg relative md:h-70">
       <div className="flex justify-between items-center">
         <div className="h-10 w-12">
-          <img src={`http://localhost:5000/images/` + val.image} alt="" />
+          <img
+            src={`https://backend-job-seeker.vercel.app/images/` + val.image}
+            alt=""
+          />
         </div>
         <div className="opacity-80">{val.posted_date}</div>
       </div>

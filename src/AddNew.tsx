@@ -68,7 +68,7 @@ export default function AddJobModal({
       <div className="bg-white max-w-2xl w-full rounded-2xl shadow-2xl p-8">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-xl font-semibold">Add Job</h1>
+          <h2 className="text-2xl font-bold">Add Job</h2>
           <button
             onClick={closeModal}
             className="text-gray-500 hover:text-black text-2xl"
