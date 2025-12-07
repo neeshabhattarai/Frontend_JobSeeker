@@ -36,6 +36,15 @@ export default function AddJobModal({
 
   // Publish button
   function handlePublish() {
+    if (
+      formData.title == "" ||
+      formData.company == "" ||
+      formData.salary == "" ||
+      formData.employmentType == "" ||
+      formData.jobType == ""
+    ) {
+      return;
+    }
     const newJob: JobType = {
       title: formData.title,
       company: formData.company,
@@ -90,6 +99,7 @@ export default function AddJobModal({
               value={formData.title}
               placeholder="Enter Job Title"
               onChange={handleChange}
+              required
               className="w-full px-3 py-2 mt-1 rounded-md bg-gray-200/40 focus:outline-blue-500"
             />
           </div>
@@ -103,6 +113,7 @@ export default function AddJobModal({
               name="jobType"
               value={formData.jobType}
               onChange={handleChange}
+              required
               className="w-full px-3 py-2 mt-1 rounded-md bg-gray-200/40"
             >
               <option value="">Select Job Type</option>
@@ -120,6 +131,7 @@ export default function AddJobModal({
               Employment Type <span className="text-red-500">*</span>
             </label>
             <select
+              required
               name="employmentType"
               value={formData.employmentType}
               onChange={handleChange}
@@ -140,6 +152,7 @@ export default function AddJobModal({
               Seniority Level <span className="text-red-500">*</span>
             </label>
             <select
+              required
               name="seniority"
               value={formData.seniority}
               onChange={handleChange}
@@ -164,6 +177,7 @@ export default function AddJobModal({
               <input
                 type="number"
                 name="salary"
+                required
                 value={formData.salary}
                 placeholder="Enter Salary"
                 onChange={handleChange}
@@ -179,6 +193,7 @@ export default function AddJobModal({
             </label>
             <input
               type="text"
+              required
               name="company"
               value={formData.company}
               placeholder="Enter Company Name"
