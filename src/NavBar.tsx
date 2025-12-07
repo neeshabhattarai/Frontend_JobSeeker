@@ -17,9 +17,11 @@ export default function NavBar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex text-sm space-x-5 font-bold opacity-80">
-          <div>Jobs</div>
-          <div>Companies</div>
-          <div>About Us</div>
+          <a href="#jobs" className="cursor-pointer">
+            Jobs
+          </a>
+          <a href="#company">Companies</a>
+          <a href="#abour">About Us</a>
         </div>
 
         {/* User + Avatar (desktop only) */}
@@ -39,7 +41,9 @@ export default function NavBar() {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-white shadow-md rounded-md p-4 space-y-4 font-semibold text-sm">
-          <div>Jobs</div>
+          <a href="#jobs" className="cursor-pointer">
+            Jobs
+          </a>
           <div>Companies</div>
           <div>About Us</div>
 

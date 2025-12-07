@@ -190,7 +190,10 @@ export default function JobUI() {
           />
 
           {/* JOB LIST */}
-          <div className="flex-1 grid grid-cols-1 gap-5 md:grid-cols-2 p-4">
+          <div
+            className="flex-1 grid grid-cols-1 gap-5 md:grid-cols-2 p-4"
+            id="#jobs"
+          >
             {filteredData.map((val) => (
               <MappedList
                 key={val.company}
